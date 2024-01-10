@@ -1,0 +1,9 @@
+
+li{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}

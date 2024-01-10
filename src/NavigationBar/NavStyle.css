@@ -1,0 +1,29 @@
+/* Path: src/NavigationBar/NavStyle.css */
+
+#middleNavigationBar{
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#desktopNavigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+}
+
+
