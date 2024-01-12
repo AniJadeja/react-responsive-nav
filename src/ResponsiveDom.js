@@ -9,18 +9,18 @@ import ReactDOM from 'react-dom/client';
 
 import NavigationBar from "./NavigationBar/NavigationBar";
 
-const createAppLayout = (navEntries) => {
+const createAppLayout = (navEntries, isMobileView) => {
   return (
     <>
-      <NavigationBar navEntries={navEntries} />
+      <NavigationBar navEntries={navEntries} isMobileView={isMobileView} />
       <Outlet />
     </>
   );
 }
 
 
-export const createResponsiveNavigationBar = (navEntries) => {
-  const appLayout = createAppLayout(navEntries);
+export const createResponsiveNavigationBar = (navEntries,isMobileView) => {
+  const appLayout = createAppLayout(navEntries, isMobileView);
   const router = createBrowserRouter([
     {
       element: appLayout,
