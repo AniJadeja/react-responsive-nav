@@ -11,6 +11,25 @@ import './NavButtonAnimation.css'
 const NavigationBar = ({ navEntries, isMobileView}) => {
   const [isClosed, setIsClosed] = useState(false);
 
+  let navStyle = {
+    color: "white",
+    textDecoration: "none",
+    backgroundColor: "#1b1b1b",
+    fontFamily: "Roboto",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    padding: "1rem",
+    margin: "1rem",
+
+  };
+
+  let liStyle = {
+    color: "red",
+    fontWeight: "bold",
+  };
+  
+  
+
   // const projectName = "Portfolio";
 
   // const [isClosed, setIsClosed] = useState(false);
@@ -23,7 +42,7 @@ const NavigationBar = ({ navEntries, isMobileView}) => {
 
         isMobileView
           ? (
-            <nav id="desktopNavigation" className="navElement">
+            <nav id="desktopNavigation" className="navElement" >
               <Link to="/" onClick={
                 closeMobileMenu}>
                 <img alt="App Logo" />
@@ -33,6 +52,7 @@ const NavigationBar = ({ navEntries, isMobileView}) => {
                   console.log(entry);
                   return (
                     <NavEntry
+                      
                       path={entry.path}
                       page={entry.name}
                     />
@@ -63,6 +83,7 @@ const NavigationBar = ({ navEntries, isMobileView}) => {
                     console.log(entry);
                     return (
                       <NavEntry
+                       
                         path={entry.path}
                         page={entry.name}
                       />
