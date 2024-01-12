@@ -8,6 +8,6 @@ let navEntries = [
   { path: "/app", element: <App />, name: "App" },
   { path: "/lol", element: <App />, name: "lol" }];
 
+let isMobileView = false;
 
-
-createResponsiveNavigationBar(navEntries);
+createResponsiveNavigationBar(navEntries, isMobileView);
